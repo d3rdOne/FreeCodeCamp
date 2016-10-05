@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>TwitchTV Streamers</title>
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+
+</head>
+
+<body ng-app="twitchUserViewApp" ng-controller="usersController as usrCtrl">
+    <article id="userViewer" class="container" ng-init="usrCtrl.populate(1)">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <div class="app-body">
+
+                    <header>
+                        <nav>
+                            <ul class="navigation row" role="tablist">
+                                <li class="col-md-4 active" ng-click="usrCtrl.setTab(1)"><a data-toggle="tab" href="#">All</a></li>
+                                <li class="col-md-4" ng-click="usrCtrl.setTab(2)"><a data-toggle="tab" href="#">Online</a></li>
+                                <li class="col-md-4" ng-click="usrCtrl.setTab(3)"><a data-toggle="tab" href="#">Offline</a></li>
+                            </ul>
+                        </nav>
+                    </header>
+
+                    <section>
+                        <article class="users">
+                            <div class="entry" ng-repeat="x in data |orderBy:'partner':true">
+                                <div class="detail row" ng-click="openChannel(x.url,x.partner)">
+                                    <div class="col-md-2 img-container"><img ng-src="{{x.logo}}" alt="no image" class="img  img-responsive"></div>
+                                    <div class="col-md-10 text-container">
+                                        <h4 class="list-group-item-heading"><strong>{{x.display_name}}</strong><span class="badge-alt pull-right" ng-class="x.partner?'badge-online':'badge-offline'" > </span></h4>
+                                        <p class="list-group-item-text" ng-show="{{x.partner}}"><strong>{{x.game}}</strong>:<small>{{x.status}}</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </section>
+
+                    <footer></footer>
+                </div>
+            </div>
+        </div>
+    </article>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.2/angular.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+
+</html>

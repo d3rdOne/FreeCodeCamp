@@ -1,0 +1,112 @@
+body {
+    font-family: 'Orbitron', sans-serif;
+    background-color: #a8a098;
+}
+
+.container {
+    position: relative;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    height: 570px;
+    border: 3px solid black;
+    border-radius: 15px;
+    background-color: #9da7a0; /*#e5d8c9;*/
+    box-shadow: inset -2px -5px 4px 0 gray;
+}
+
+.title {
+    text-align: center;
+    font-size: 22px;
+}
+
+.entry {
+    width: 340px;
+    height: 70px;
+    background-color: #f0eadf;
+    margin-top: -15px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 6px;
+    border: 2px solid black;
+    padding-right: 10px;
+    color: darkgray;
+    font-weight: lighter;
+}
+
+.input-entry {
+    height: 45px;
+    font-size: 40px;
+    text-align: right;
+}
+
+.input-history {
+    font-size: 18px;
+    text-align: right;
+}
+
+.buttons {
+    position: absolute;
+    display: inline-block;
+    height: 400px;
+    width: 360px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+button {
+    height: 70px;
+    width: 76px;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    margin: 5px;
+    border: none;
+    border-radius: 10px;
+    background-color: #404040;
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+    box-shadow: 0px 3px 1px 0 black;
+}
+
+button:active {
+    transform: translate(0px, 3px);
+    box-shadow: none;
+}
+
+button, button:hover, button:active, button:visited {
+    text-decoration: none !important;
+    outline: none !important;
+}
+
+#eql {
+    position: absolute;
+    height: 150px;
+    margin-left: 5px;
+}
+
+#zero {
+    width: 170px;
+}
+
+#entry {
+    color: black;
+}
+
+.red {
+    background-color: #A72D45;
+    color: white;
+    box-shadow: 0px 3px 1px 0 #38010c;
+}
+
+.credit {
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    text-align: center;
+}
+
+.author span {
+    color: maroon;
+}

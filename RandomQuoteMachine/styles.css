@@ -1,0 +1,29 @@
+body{
+  background: #F1F1F1;
+}
+.header{
+  font-family: 'Ropa Sans', sans-serif;
+}
+.quote-area{
+  top: 10%;
+  background: white;
+  min-height: 200px;
+
+  position: relative;
+  font-size: 30px;
+  padding: 20px 10px;
+  margin: auto;
+
+}
+.quote-content{
+  position: relative;
+  max-width: 100%;
+  min-height: 20px;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+.quote-new{
+    position: relative;
+    font-size: 30px;
+    padding-bottom: 30px;
+
+}

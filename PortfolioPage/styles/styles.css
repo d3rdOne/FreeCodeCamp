@@ -1,0 +1,120 @@
+body{
+    padding: 0px;
+    margin-top: 0px;
+    background-color: #E9EBEE;
+}
+.nav-custom{
+    /*background-color: #3B5998*/;
+    padding: 7px;
+    
+    
+}
+.margin-top{
+    margin-top: 50px;
+}
+.portfolio-about-body{
+    background-color: #FFFFFF;
+    
+    
+   
+    box-shadow: 1px 0px 0px 10px rgba(0,0,0,0.6);
+    -webkit-box-shadow: 1px 0px 10px 1px rgba(0,0,0,0.6);
+    -moz-box-shadow: 1px 0px 10px 1px rgba(0,0,0,0.6);
+
+    padding: 60px 40px;
+
+}
+.portfolio-main-body{
+    
+    background-color: #FFFFFF;
+    box-shadow: 1px 10px 10px 1px rgba(0,0,0,0.6);
+    -webkit-box-shadow: 1px 10px 10px 1px rgba(0,0,0,0.6);
+    -moz-box-shadow: 1px 10px 10px 1px rgba(0,0,0,0.6);
+    margin-top: 20px;
+    padding: 40px
+}
+
+.about-content{
+    margin: 50px 90px;
+    position: relative;
+}
+.about-title{
+    
+}
+.about-text{
+    margin-top: 40px;
+    line-height: 10px;
+    
+}
+.port-content div{
+    max-height: 100%;
+}
+.port-content div img{
+   border: 1px solid black;
+    height: 400px;
+    width: 500px;
+    margin: 20px;
+     box-shadow: 1px 0 20px 1px rgba(0,0,0,0.6);
+    -webkit-box-shadow: 1px 0 20px 1px rgba(0,0,0,0.6);
+    -mox-box-shadow: 1px 0 20px 1px rgba(0,0,0,0.6);
+   
+}
+.port-main-title{
+    
+}
+.portfolio-about-body img{
+    box-shadow: 1px 0 20px 1px rgba(0,0,0,0.6);
+    -webkit-box-shadow: 1px 0 20px 1px rgba(0,0,0,0.6);
+    -mox-box-shadow: 1px 0 20px 1px rgba(0,0,0,0.6);
+}
+.font-roboto-condensed{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.font-lato{
+    font-family: 'Lato', sans-serif;
+}
+.font-droid-sans-mono{
+    font-family: 'Droid Sans Mono', sans-serif;
+}
+footer{
+}
+.box-default{
+    margin-top: 50px;
+}
+.contact{
+    position: static;
+    padding: 30px;
+    
+}
+.form-Msg{
+    padding: 30px;
+}
+.contact-body{
+    background-color: #FFFFFF;
+    box-shadow: 1px 10px 10px 1px rgba(0,0,0,0.6);
+    -webkit-box-shadow: 1px 10px 10px 1px rgba(0,0,0,0.6);
+    -moz-box-shadow: 1px 10px 10px 1px rgba(0,0,0,0.6);
+    margin: 10px;
+    height: 500px;
+    
+}
+.foot{
+    background-color: #222222;
+    margin-top:20px;
+    height: 100px;
+    color:white;
+}
+.foot div h3{
+    position: relative;
+    margin-top: 30px;
+}
+.panel{
+    -webkit-transition: all .8s ease-in-out;
+    -moz-transition: all .8s ease-in-out;
+    -o-transition: all .8s ease-in-out;
+    transition: all .8s ease-in-out;
+}
+.panel:target{
+    
+}
+

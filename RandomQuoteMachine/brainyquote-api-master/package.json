@@ -1,0 +1,40 @@
+{
+  "name": "fetch-quote",
+  "version": "1.0.0",
+  "description": "Fetch daily quote from http://www.brainyquote.com",
+  "main": "index.js",
+  "scripts": {
+    "lint": "jshint index.js",
+    "pretest": "npm run lint",
+    "test": "echo \"no test specified\"",
+    "prepublish": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/appin/fetch-qoute.git"
+  },
+  "bugs": {
+    "url": "https://github.com/appin/fetch-qoute/issues"
+  },
+  "homepage": "https://github.com/appin/fetch-qoute#readme",
+  "author": {
+    "name": "bubkoo",
+    "email": "bubkoo.wy@gmail.com"
+  },
+  "license": "MIT",
+  "keywords": [
+    "qoute",
+    "fetch",
+    "famous",
+    "brainyquote",
+    "daily",
+    "today",
+    "love",
+    "funny",
+    "natual",
+    "art"
+  ],
+  "devDependencies": {
+    "jshint": "^2.9.1"
+  }
+}

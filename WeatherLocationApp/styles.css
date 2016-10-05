@@ -1,0 +1,96 @@
+body
+{
+    font-family: 'Poiret One', cursive;
+
+    color: #FFFFFF;
+    background-image:url("http://res.cloudinary.com/d3rdone/image/upload/v1465898998/sea_waves_surf_foam_black_and_white_92681_1920x1080_nagoa7.jpg");
+    background-repeat:repeat;
+    display: block;
+
+}
+.header{
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 100px;
+    font-size: 150%;
+}
+
+.link{
+  text-decoration: none;
+  color: white;
+  border: 1px solid rgba(240,240,240,0.6);
+  background-color: rgba(0,0,0,.5);
+  padding: 1px 15px;
+}
+
+.link:hover{
+  text-decoration: none;
+  color:white;
+}
+
+.toggle{
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+  text-decoration: none;
+}
+
+.results{
+  padding: 20px 70px;
+  padding-top: 10px;
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: rgba(0,0,0,0.5);
+  text-align: center;
+}
+
+
+
+.time{
+  font-size: 60px;
+  padding-top: 10px;
+  margin: 0px 30px;
+  margin-top: 10px;
+  position: relative;
+
+}
+
+.time-container{
+
+  position: relative;
+  padding: 10px 10px 0 10px;
+}
+
+.temperature{
+  display: block;
+  position: absolute;
+  z-index: 100;
+  right: 10px;
+  top:10px;
+}
+
+.temp-button{
+  margin: 0 auto;
+
+  position: relative;
+  top: -55px;
+}
+.btn{
+  position: absolute;
+  right: 0px;
+}
+.btn li{
+  display: inline;
+}
+.weather{
+  position : absolute;
+  margin-top: 0 auto;
+  top: 160px;
+  min-width: 100%;
+  line-height: 50px;
+}
+.weather-icon{
+
+  position: relative;
+  z-index: 100;
+}

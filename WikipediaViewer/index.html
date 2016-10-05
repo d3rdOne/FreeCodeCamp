@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Wikipedia Viewer</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Franklin" rel="stylesheet" type="text/css">
+
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body ng-app="myApp" ng-controller="resultController as resCtrl" ng-animate="'animate'">
+    <div class="container">
+        <div class="main-body">
+            <div class="text-center">
+                <h2><small>Wikipedia Search</small></h2>
+            </div>
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-3">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <input id="searchQuery" type="text" placeholder="Enter query here" class="form-control" ng-model="searchQuery" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <button id="searchButton" type="button" class="btn btn-primary" ng-click="searchWiki()"><span class="glyphicon glyphicon-search"></span></button>
+                    <button type="button" class="btn btn-danger" ng-click="randomSearch()"><span class="glyphicon glyphicon-random"></span></button>
+                </div>
+            </div>
+            <div class="clear row">
+              <div class="col-md-7"></div>
+
+              <div class="col-md-4"><button class="btn btn-warning" ng-click="clearSearch()">Clear All</button></div>
+            </div>
+        </div>
+        <div class="row">
+
+            <div class="col-md-12">
+                <div class="result">
+
+                    <div class="entry" ng-repeat="results in resultData">
+                        <div id="indicator"></div>
+                        <a href="https://en.wikipedia.org/wiki/{{results.title}}" target="_blank">
+                            <div class="entry-container">
+                                <h4><strong>{{results.title}}</strong></h4>
+                                <p>{{results.snippet}}</p>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.2.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="angular.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+
+
+</html>

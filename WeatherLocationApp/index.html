@@ -1,0 +1,42 @@
+
+<html>
+
+<head>
+    <title>Weather App</title>
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/pe-icon-7-weather.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+
+<body onload="getTime()">
+  <div>
+      <div class="header">
+          <h2>Weather App</h2>
+      </div>
+
+      <div class="results">
+
+          <div class="time-container">
+
+            <div class="time"></div>
+            <div class="temperature"></div>
+            <div class="weather"></div>
+          </div>
+
+          <div class="temp-button">
+            <ul class="btn">
+              <li><a id="fahrenheit" class="link toggle" href="#">&deg;<b>F</b></a></li>
+              <li><a id="celsius" class="link" href="#">&deg;<b>C</b></a></li>
+            </ul>
+          </div>
+          <div class="location"></div>
+
+          <div class="loading"><img src="http://res.cloudinary.com/d3rdone/image/upload/v1465840219/jumping_gtrkwk.gif"></div>
+      </div>
+  </div>
+</body>
+<script src="scripts.js"></script>
+
+</html>
