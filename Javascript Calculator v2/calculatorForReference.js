@@ -3,7 +3,7 @@ var entry = "";
 var inputDisplay = $("#entry");
 var historyDisplay = $("#history");
 var historyArray = [];
-var operator = ["/", "x", "-", "+", "=", ".", "CE", "AC"];
+var operator = ["/", "x", "-", "+", "=", ".", "CE", "AC","."];
 
 $("button").click(function(event) {
 
