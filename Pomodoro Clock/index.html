@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pomodoro Clock</title>
+
+    <link rel="stylesheet" href="css\style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="app-container container">
+        <!--  Title Row-->
+        <div class="row">
+            <div class="col-md-12 title">
+                <h2 class="text-center">Pomodoro Clock</h2>
+            </div>
+        </div>
+        <!--  Buttons row-->
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3 controls">
+                <div class="row">
+                    <div class="col-md-4 break-time">
+                        <div class=" col-md-12 control-title text-center">
+                            <h3>Break Time</h3></div>
+                        <div class="row text-center buttons">
+                            <div class="col-md-4 control-button"><span class="glyphicon glyphicon-chevron-left"></span></div>
+                            <div class="col-md-4 control-button">
+                                <p id="breaktime" class="time-display">5</p>
+                            </div>
+                            <div class="col-md-4 control-button"><span class="glyphicon glyphicon-chevron-right"></span></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-md-offset-4 work-time">
+                        <div class="col-md-12 control-title text-center">
+                            <h3>Work Time</h3></div>
+                        <div class="row text-center buttons">
+                            <div class="col-md-4 control-button"><span class="glyphicon glyphicon-chevron-left"></span></div>
+                            <div class="col-md-4 control-button">
+                                <p id="worktime" class="time-display">25</p>
+                            </div>
+                            <div class="col-md-4 control-button"><span class="glyphicon glyphicon-chevron-right"></span></div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Clock   -->
+        <div class="row">
+            <div class="col-md-offset-4 count-container">
+                <div id="countdown">
+                    <h3>here</h3>
+                </div>
+                <div class="circle-overlay row">
+                    <div class="circle-text">
+                        <span>25:00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-buttons">
+            <button value="start">Start</button>
+            <button value="stop">Stop</button>
+        </div>
+
+    </div>
+
+
+    <script src="scripts\jquery-3.1.1.min.js"></script>
+    <script src="scripts\jquery.countdown360.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="scripts\pomodoro.js"></script>
+</body>
+
+</html>
